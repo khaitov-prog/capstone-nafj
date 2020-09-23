@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add User</title>
+<link href="../static/css/css.css" th:href="@{/css/css.css}" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+</head>
+<body>
+	<div class="container-fluid bg">
+	 	<div class="row">
+	 		<div class="col-md-4 col-sm-4 col-sx-12"></div>
+	 		<div class="col-md-4 col-sm-4 col-sx-12 ">
+	 		
+	 		<div class="form-container">
+			 		<div class="panel-heading">
+			 			<img src="../img/borgo_logo.jpg" height="30%" width="100%">
+			 		</div>
+			 
+					 <div class="form-group">
+						<h3 align="center">Add User</h3>
+						
+						<form action="#" th:action="@{/admin/addUser}" method="post">
+						<div class="form-group">
+						    <label for="username">Username</label>
+						    <input type="text" name="username" required/><br>
+					    </div> 
+					    <div class="form-group">
+						    <label for="password">Password</label>
+							<input type="text" name="password" required/><br> 
+					    </div> 
+					    <div class="form-group">
+						    <label for="role">Role</label>
+							<select name="role">
+								<option th:each="r:${roles}" th:value="${r.id}" th:text="${r.prettyRolename}"></option>
+							</select>	
+					    </div> 
+							   
+						<br>
+							<input type="submit" value="Add User">
+						</form>
+					</div>
+					<hr>
+		
+			
+					<div th:fragment="logout" class="logout" sec:authorize="isAuthenticated()" >
+							<form action="#" th:action="@{/logout}" method="post" class="btn btn-default btn-sm btn-block">
+								<input type="submit" value="Logout" />
+							</form>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
