@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Business Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="creative.css">
+
+</head>
+
+<body>
+    <div class="banner">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <h1>NAFJ MOTOR SERVICES</h1>
+                </td>
+                <td>
+                    <h2 style="text-align: right;">Test Business</h2>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <nav class="navbar navbar-expand-md ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="with-background">
+        <div class="container">
+          <br><br>
+            <div class="row">
+              <div class="col col-lg-3">
+
+              </div>
+              <div class="col col-lg-4 white-background">
+                <h4 class="text-center">Creating Business Account</h4>
+                <form >
+                  <div class="form-group">
+                      <label for="username" class="col-form-label">Business Admin UserName</label>
+                      <input type="text" class="form-control" name="username" id="username" />
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="password" class="col-form-label">Password</label>
+                      <input type="password" class="form-control" name="password" id="password" />
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" class="btn btn-primary form-control" value="REGISTER" />
+                  </div>
+              </form>
+              </div>
+              <div class="col col-lg-1">
+
+              </div>
+              <div class="col col-lg-4 white-background">
+                <form >
+                  <div class="form-group">
+                      <label for="username" class="col-form-label">UserName</label>
+                      <input type="text" class="form-control" name="username" id="username" />
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="password" class="col-form-label">Password</label>
+                      <input type="password" class="form-control" name="password" id="password" />
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" class="btn btn-primary form-control" value="LOGIN" />
+                  </div>
+              </form>
+              <a href="#" class="btn btn-link">Trouble logging in?</a>
+              <h4 class="text-center">Not Registered Yet?</h4>
+              <a href="" class="btn btn-secondary form-control">Register as Customer</a>
+              <br><br>
+              <a href="" class="btn btn-danger form-control">Register as Business</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+
+</body>
+
+</html>

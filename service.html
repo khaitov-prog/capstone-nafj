@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Business Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="creative.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+   
+</head>
+
+<body>
+    <div class="banner">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <h1>NAFJ MOTOR SERVICES</h1>
+                </td>
+                <td>
+                    <h2 style="text-align: right;">Test Business</h2>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <nav class="navbar navbar-expand-md ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col col-lg-6">
+                <div class="content">
+                    <h4>Test Business Services</h4>
+                    <hr>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Tire Check
+                            <i class="fas fa-list"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Scratch Check
+                            <i class="fas fa-list"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Broken Window Repair 
+                            <i class="fas fa-list"></i>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col col-lg-6">
+                <div class="content">
+                    <h4>Add Service</h4>
+                    <hr>
+                    <form >
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Service Name</label>
+                            <input type="text" class="form-control" name="name" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="col-form-label">Service Description</label>
+                            <textarea class="form-control" name="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="submit" class="btn btn-sm btn-primary" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
