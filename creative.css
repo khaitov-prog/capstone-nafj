@@ -1,0 +1,33 @@
+.sampleContent {
+    padding: 4em 0 4em 0;
+  }
+  
+.banner {
+    background:#343F87;
+    margin: 0;
+    padding: 1em;
+    color:white;
+    font-weight: bold;
+    height:80px;
+}
+.banner h2{
+    font-size:14pt;
+    color:orange;
+}
+nav{
+    background-color: #E8E8E8;
+}
+.with-background{
+    background-image: url('garage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    opacity: 0.7;
+}
+.white-background{
+    background-color: #fff;
+    width: auto;
+    border-radius: 5px;
+    padding: 35px;
+}
